@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>MySQL 8.0 用户管理</title>
+      <link href="/2022/08/17/MySQL/"/>
+      <url>/2022/08/17/MySQL/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MySQL-8-0-用户管理"><a href="#MySQL-8-0-用户管理" class="headerlink" title="MySQL 8.0 用户管理"></a>MySQL 8.0 用户管理</h1><h3 id="用户管理操作"><a href="#用户管理操作" class="headerlink" title="用户管理操作"></a>用户管理操作</h3><p>创建用户</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">create user &#x27;username&#x27;@&#x27;host&#x27; identified with mysql_native_password by &#x27;password&#x27;;</span><br></pre></td></tr></table></figure><p>授权用户</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grant all privileges on *.* to &#x27;username&#x27;@&#x27;host&#x27; with grant option;</span><br></pre></td></tr></table></figure><p>查看授权</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show grants for &#x27;username&#x27;@&#x27;host&#x27;;</span><br></pre></td></tr></table></figure><p>撤销授权</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">revoke all privileges on *.* from &#x27;username&#x27;@&#x27;host&#x27;;</span><br></pre></td></tr></table></figure><p>修改密码</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alter user &#x27;username&#x27;@&#x27;host&#x27; identified by &#x27;new_password&#x27;;</span><br></pre></td></tr></table></figure><p>刷新权限</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flush privileges;</span><br></pre></td></tr></table></figure><p>删除用户</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">drop user &#x27;username&#x27;@&#x27;host&#x27;;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Nginx</title>
+      <link href="/2022/08/17/Nginx/"/>
+      <url>/2022/08/17/Nginx/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>VMware</title>
       <link href="/2022/05/27/VMware/"/>
       <url>/2022/05/27/VMware/</url>
